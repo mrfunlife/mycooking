@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/content_detail_menu"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_medium"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        style="@style/TextViewWhiteBold"
+        android:textSize="18sp"
+        android:id="@+id/itemDetailMenuNameFood"
+        android:text="@string/namefood" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_big"
+        style="@style/TextViewWhiteBold"
+        android:textSize="16sp"
+        android:text="Nguyên Liệu" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextViewWhite"
+        android:id="@+id/itemDetailMenuMaterial"
+        android:text="@string/material" />
+    <TextView
+        android:layout_marginTop="@dimen/margin_big"
+        style="@style/TextViewWhiteBold"
+        android:textSize="16sp"
+        android:text="Cách chế biến" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextViewWhite"
+        android:id="@+id/itemDetailMenuMaking"
+        android:text="@string/making" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_big"
+        style="@style/TextViewWhiteBoldItalic"
+        android:textSize="16sp"
+        android:text="Mách nhỏ" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextViewWhiteItalic"
+        android:id="@+id/itemDetailNoteFood"
+        android:text="@string/notefood" />
+</LinearLayout>

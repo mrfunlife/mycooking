@@ -3,4 +3,25 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+    <!--All Screen-->
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorTextGray">#999999</color>
+    <color name="colorGray">#d6d6d6</color>
+    <color name="colorGrayLight">#ececec</color>
+    <color name="colorTextGray2">#666666</color>
+    <color name="colorMainOrange">#FF9016</color>
+    <color name="colorMainPink">#D0343A</color>
+    <color name="colorMainWhite">#ffffff</color>
+    <color name="colorBackground">#efeded</color>
+    <color name="colorBackgroundGray">#f5f2f2</color>
+    <color name="colorFacebook">#345698</color>
+    <color name="color_thumb">#E5492A</color>
+    <color name="color_black">#222222</color>
+    <color name="color_gray_weight">#444444</color>
+    <color name="colorGreen">#00610b</color>
+    <color name="colorBGWellcome">#ff7f00</color>
+
 </resources>

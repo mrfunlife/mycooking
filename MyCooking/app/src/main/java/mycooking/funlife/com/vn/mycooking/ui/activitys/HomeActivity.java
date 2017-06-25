@@ -8,7 +8,6 @@ import mycooking.funlife.com.vn.mycooking.ui.fragments.HomeFragment;
 
 public class HomeActivity extends BaseActivity {
 
-    @Override
     protected Fragment createRootFragment() {
         return  new HomeFragment();
     }

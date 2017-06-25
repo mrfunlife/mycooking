@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/bar"
+    android:background="@color/colorFacebook"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:background="@drawable/ic_arrow_back"
+        android:layout_height="25dp" />
+    <Button
+        android:layout_width="?attr/actionBarSize"
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Light.ActionButton"
+        android:layout_height="?attr/actionBarSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/bar_title"
+        style="@style/BoldTextStyleRobonto"
+        android:textColor="@color/colorMainWhite"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_height="?attr/actionBarSize" />
+
+</RelativeLayout>

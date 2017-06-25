@@ -9,9 +9,11 @@
         <item name="android:windowContentTransitions" tools:ignore="NewApi">true</item>
         <item name="android:windowAllowEnterTransitionOverlap" tools:ignore="NewApi">true</item>
         <item name="android:windowAllowReturnTransitionOverlap" tools:ignore="NewApi">true</item>
-        <item name="android:windowSharedElementEnterTransition" tools:ignore="NewApi">@android:transition/move
+        <item name="android:windowSharedElementEnterTransition" tools:ignore="NewApi">
+            @android:transition/move
         </item>
-        <item name="android:windowSharedElementExitTransition" tools:ignore="NewApi">@android:transition/move
+        <item name="android:windowSharedElementExitTransition" tools:ignore="NewApi">
+            @android:transition/move
         </item>
 
     </style>
@@ -22,5 +24,70 @@
         <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
         <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
     </style>
+
+
+    <style name="BoldTextStyleRobonto">
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="BoldItalicTextStyleRobonto">
+        <item name="fontPath">fonts/Roboto-BoldItalic.ttf</item>
+    </style>
+
+    <style name="ItalicTextStyleRobonto">
+        <item name="fontPath">fonts/Roboto-Italic.ttf</item>
+    </style>
+
+
+    <style name="TextViewBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
+    <style name="TextViewBlackBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
+    <style name="TextViewWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
+    <style name="TextViewWhiteBold">
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
+    <style name="TextViewWhiteBoldItalic">
+        <item name="fontPath">fonts/Roboto-BoldItalic.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
+    <style name="TextViewWhiteItalic">
+        <item name="fontPath">fonts/Roboto-Italic.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

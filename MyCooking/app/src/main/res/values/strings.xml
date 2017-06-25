@@ -4,4 +4,29 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Demo-->
+    <string name="fake_data_menu">" "- Bắp bò nhúng "\n" - "Rau sống" "\n" - Canh cải xanh "\n" - Giá xào bông hẹ</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+
+
+    <!--DemoDetailMenu-->
+    <string name="namefood">Cà rốt, su hào bóp chua(Ăn với sườn chiên)</string>
+    <string name="material">- Su hào lớn: 1 củ"\n"- Cà rốt: 2 củ"\n"- Hành khô: 2củ"\n"- Tỏi: 1củ"\n"- Đường, giấm, muối, ớt</string>
+    <string name="making">- Su hào gọt vỏ, rửa sạch. Cắt miếng vuông, chéo nhỏ, mỏng vừa ăn."\n"
+        - Cà rốt gọt vỏ, rửa sạch. Tỉa hoa, cắt lát mỏng."\n"
+        - Cho su hào, cà rốt vào thố, thêm chút muối, xóc đều, để chừng 30 phút, rửa lại nước lạnh, vớt để ráo."\n"
+        - Hành tím lột vỏ, rửa sạch, xắt lát. Tỏi lột vỏ. Ớt tỏi băm nhỏ."\n"
+        - Pha hỗn hợp đường, giấm, muối, thêm nước đun sôi để nguội. Tùy khẩu vị mà gia giảm, nhưng thường pha theo tỉ lệ: 1 đường - 2 giấm 1 muối. (Lưu ý là su hào, cà rốt đã được bóp muối nên có độ mặn rồi). Sau cùng thêm tỏi và ớt băm vào."\n"
+        - Cho su hào, cà rốt vào thố hoặc tô, đổ hỗn hợp ngập nguyên liệu."\n"
+        - Ngâm khoảng nửa tiếng là ăn được.
+    </string>
+
+    <string name="notefood">- Nếu có thời gian, thì sau khi bóp muối,phơi su hào, cà rốt sẽ hơi se se, ăn sẽ giòn hơn. Nếu không có nắng, gió thì có thể cho vào lò vi nướng sấy ở nhiệt độ thấp khoảng 20 -> 30 phút để tránh su hào, cà rốt bị cứng."\n"
+        - Nhiều hành sẽ giúp món dưa góp rất thơm ngon."\n"
+        - Món đồ chua này có thể ăn được trong vài ngày. Nên để trong tủ lạnh.
+
+    </string>
 </resources>
