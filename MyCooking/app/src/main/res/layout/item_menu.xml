@@ -5,37 +5,38 @@
     android:background="@android:color/transparent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:paddingTop="100dp"
-        android:paddingBottom="100dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
         android:gravity="center"
         android:background="@android:color/transparent"
         android:layout_width="match_parent"
-        android:layout_marginLeft = "30dp"
-        android:layout_marginRight="30dp"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content">
-       <ImageView
-           android:layout_width="100dp"
-           android:background="@drawable/amthuc6"
-           android:layout_height="100dp" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="140dp"
+           android:src="@drawable/amthuc6"
+           android:layout_height="140dp" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_big"
             android:paddingLeft="@dimen/margin_medium"
             android:background="@android:color/transparent"
             android:paddingRight="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_big"
-            android:layout_marginStart="@dimen/margin_big"
             android:layout_height="wrap_content">
             <TextView
                 style="@style/TextViewWhiteBold"
+                android:textSize="18sp"
                 android:id="@+id/itemHomeTxtMenuTitle"
                 android:text="Thực đơn 1"/>
             <TextView
                 android:layout_marginTop="@dimen/margin_medium"
                 style="@style/TextViewWhiteBold"
+                android:textSize="16sp"
                 android:id="@+id/itemHomeTxtMenu"
                 android:text="@string/fake_data_menu"/>
         </LinearLayout>

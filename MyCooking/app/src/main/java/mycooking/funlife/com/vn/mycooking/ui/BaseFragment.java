@@ -11,6 +11,9 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
+
 import butterknife.ButterKnife;
 import icepick.Icepick;
 import mycooking.funlife.com.vn.mycooking.R;
@@ -24,6 +27,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends NucleusFragm
 
     View mContentView;
     ProgressBar mProgressBar;
+    MaterialDialog mMaterialDialog;
 
     @CallSuper
     @Override
@@ -50,7 +54,19 @@ public abstract class BaseFragment<P extends BasePresenter> extends NucleusFragm
         mContentView = placeHolderView.inflate();
 
         ButterKnife.bind(this, rootView);
+        mMaterialDialog = new MaterialDialog.Builder(getActivity())
+                .content(R.string.please_wait)
+                .progress(true, 0)
+                .progressIndeterminateStyle(true)
+                .cancelable(false)
+                .negativeText(R.string.cancel)
+                .onNegative(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
 
+                    }
+                })
+                .build();
         return rootView;
     }
 
@@ -68,6 +84,12 @@ public abstract class BaseFragment<P extends BasePresenter> extends NucleusFragm
         }
     }
 
-
+    public void showLoadingDialog(boolean check) {
+        if(check) {
+            mMaterialDialog.show();
+        }else {
+            mMaterialDialog.hide();
+        }
+    }
 
 }

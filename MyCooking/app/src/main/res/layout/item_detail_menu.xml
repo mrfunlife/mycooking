@@ -13,7 +13,7 @@
         android:layout_marginTop="@dimen/margin_big"
         android:layout_width="match_parent"
         android:gravity="center_horizontal"
-        style="@style/TextViewWhiteBold"
+        style="@style/TextViewBlackBold"
         android:textSize="18sp"
         android:id="@+id/itemDetailMenuNameFood"
         android:text="@string/namefood" />
@@ -21,36 +21,36 @@
 
     <TextView
         android:layout_marginTop="@dimen/margin_big"
-        style="@style/TextViewWhiteBold"
+        style="@style/TextViewBlackBold"
         android:textSize="16sp"
         android:text="Nguyên Liệu" />
 
     <TextView
         android:layout_marginTop="@dimen/margin_medium"
-        style="@style/TextViewWhite"
+        style="@style/TextViewBlack"
         android:id="@+id/itemDetailMenuMaterial"
         android:text="@string/material" />
     <TextView
         android:layout_marginTop="@dimen/margin_big"
-        style="@style/TextViewWhiteBold"
+        style="@style/TextViewBlackBold"
         android:textSize="16sp"
         android:text="Cách chế biến" />
 
     <TextView
         android:layout_marginTop="@dimen/margin_medium"
-        style="@style/TextViewWhite"
+        style="@style/TextViewBlack"
         android:id="@+id/itemDetailMenuMaking"
         android:text="@string/making" />
 
     <TextView
         android:layout_marginTop="@dimen/margin_big"
-        style="@style/TextViewWhiteBoldItalic"
+        style="@style/TextViewBlackBoldItalic"
         android:textSize="16sp"
         android:text="Mách nhỏ" />
 
     <TextView
         android:layout_marginTop="@dimen/margin_medium"
-        style="@style/TextViewWhiteItalic"
+        style="@style/TextViewBlackItalic"
         android:id="@+id/itemDetailNoteFood"
         android:text="@string/notefood" />
 </LinearLayout>

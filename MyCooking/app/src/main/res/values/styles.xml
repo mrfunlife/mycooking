@@ -76,7 +76,13 @@
         <item name="android:textColor">@color/colorTextWhite</item>
         <item name="android:textSize">@dimen/textsize_medium</item>
     </style>
-
+    <style name="TextViewBlackBoldItalic">
+        <item name="fontPath">fonts/Roboto-BoldItalic.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
     <style name="TextViewWhiteItalic">
         <item name="fontPath">fonts/Roboto-Italic.ttf</item>
         <item name="android:layout_width">wrap_content</item>
@@ -85,9 +91,24 @@
         <item name="android:textSize">@dimen/textsize_medium</item>
     </style>
 
+    <style name="TextViewBlackItalic">
+        <item name="fontPath">fonts/Roboto-Italic.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/textsize_medium</item>
+    </style>
+
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
 
 </resources>

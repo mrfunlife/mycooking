@@ -5,7 +5,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--For All-->
+    <string name="please_wait">Đang lấy dữ liệu</string>
+    <string name="loading">Loading</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
 
+    <string name="no_content_available">No Content Available</string>
+    <string name="pub_date">Publish date</string>
+    <string name="category">Category</string>
+    <!--For All-->
     <!--Demo-->
     <string name="fake_data_menu">" "- Bắp bò nhúng "\n" - "Rau sống" "\n" - Canh cải xanh "\n" - Giá xào bông hẹ</string>
     <string name="title_item_list">Items</string>
@@ -29,4 +38,7 @@
         - Món đồ chua này có thể ăn được trong vài ngày. Nên để trong tủ lạnh.
 
     </string>
+    <string name="remove">remove</string>
+    <string name="use_menu">Hôm nay bạn sẽ sử dụng thực đơn này?.</string>
+    <string name="remove_menu">Bạn sẽ chuyển sang dùng một thực đơn khác.?</string>
 </resources>

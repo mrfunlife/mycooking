@@ -18,5 +18,4 @@ public class DetailMenuActivity extends BaseActivity {
     protected Fragment createRootFragment() {
         return new DetailMenuFragment();
     }
-
 }

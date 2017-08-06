@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!--沉浸式activity，这个view是用来占位的-->
 
         <View
             android:id="@+id/position_view"

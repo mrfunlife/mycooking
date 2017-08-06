@@ -2,12 +2,21 @@ package mycooking.funlife.com.vn.mycooking.ui.fragments;
 
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,26 +28,68 @@ import mycooking.funlife.com.vn.mycooking.model.DetailMenu;
 import mycooking.funlife.com.vn.mycooking.ui.BaseFragment;
 
 public class DetailMenuFragment extends BaseFragment {
-    @BindView(R.id.btnBack)
-    Button btnBack;
-    @BindView(R.id.bar_title)
-    TextView txtTitle;
+
     @BindView(R.id.detailMenuRecyclerView)
     RecyclerView recyclerView;
     private DetailMenuAdapter adapter;
     private List<DetailMenu> detailMenuList;
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+    @BindView(R.id.fab_archive)
+    FloatingActionButton fabArchive;
+    @BindView(R.id.text_view_feed_category)
+    TextView txtFeedCategory;
+    @BindView(R.id.text_view_feed_pub_date)
+    TextView txtFeedPubDate;
+    @BindView(R.id.image_view_article)
+    ImageView imgArticle;
+
+    private boolean mSaved = true;
+    @Override
+    public void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        setHasOptionsMenu(true);
+    }
+
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         addControls();
+        setToolbar();
+        fabArchive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mSaved){
+                    MaterialDialog removeArticleDialog = new MaterialDialog.Builder(getActivity())
+                            .content(R.string.use_menu)
+                            .positiveText(R.string.ok)
+                            .negativeText(R.string.cancel)
+                            .onPositive(new MaterialDialog.SingleButtonCallback() {
+                                @Override
+                                public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
+                                    fabArchive.setImageResource(android.R.drawable.btn_star);
+                                    mSaved = false;
+                                }
+                            }).build();
+                    removeArticleDialog.show();
+                }
+            }
+        });
     }
 
+
+    private void setToolbar() {
+        toolbar.setTitle("Thực đơn số 5");
+
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
     private void addControls() {
-        btnBack.setOnClickListener(v -> {
-            getActivity().finish();
-        });
-        txtTitle.setText("Thực đơn số 5" + "" + "");
+//        btnBack.setOnClickListener(v -> {
+//            getActivity().finish();
+//        });
+//        txtTitle.setText("Thực đơn số 5" + "" + "");
 
         detailMenuList = new ArrayList<>();
         adapter = new DetailMenuAdapter(getActivity(),detailMenuList);
@@ -61,8 +112,37 @@ public class DetailMenuFragment extends BaseFragment {
         adapter.notifyDataSetChanged();
     }
 
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_detail_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        //override default back button present on the toolbar
+        if (id == android.R.id.home) {
+            return true;
+        }
+
+        if (id == R.id.action_refresh) {
+
+            return true;
+        }
+
+        if (id == R.id.action_open_in_browser) {
+            return true;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected int getLayoutResId() {
-        return R.layout.fragment_detail_menu;
+        return R.layout.layout_detail_menu;
     }
 }
