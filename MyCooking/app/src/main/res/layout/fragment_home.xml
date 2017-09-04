@@ -1,91 +1,61 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whitelight"
+    android:orientation="vertical"
     tools:context="mycooking.funlife.com.vn.mycooking.ui.fragments.HomeFragment">
-    <LinearLayout
+    <include layout="@layout/bar_custom_tranparent"/>
+
+    <mycooking.funlife.com.vn.mycooking.customview.DiscreteScrollView.DiscreteScrollView
+        android:layout_width="match_parent"
         android:layout_marginTop="@dimen/margin_big"
-        android:id="@+id/linearLayout"
+        android:id="@+id/homeRecyclerView"
+        android:layout_height="wrap_content">
+    </mycooking.funlife.com.vn.mycooking.customview.DiscreteScrollView.DiscreteScrollView>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
+        <ImageButton
+            android:id="@+id/item_btn_comment"
+            style="@style/ClickableImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_comment_text_outline_black_24dp"
+            />
 
-        <View
-            android:id="@+id/position_view"
-            android:layout_width="1px"
-            android:layout_height="1px" />
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="horizontal">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/homeBtnFloatSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shopping_black_24dp"
+            android:tint="@android:color/white"
+            app:rippleColor="@color/maincolor"
+            app:useCompatPadding="true" />
 
-            <View
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
-                android:layout_marginStart="15dp"
-                android:background="@drawable/search" />
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="INTEREST"
-                android:textColor="#ffffff" />
-
-            <View
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="15dp"
-                android:layout_marginEnd="15dp"
-                android:background="@drawable/close" />
-
-        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/homeBtnStar"
+            style="@style/ClickableImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_star_border_black_24dp"
+        />
 
     </LinearLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/bottom_layout"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true">
-
-        <ImageView
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/icon1" />
-
-        <ImageView
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/icon2" />
-
-        <ImageView
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/icon3" />
-    </RelativeLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:id="@+id/homeRecyclerView"
-        android:layout_centerInParent="true"
-        android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
-
-</RelativeLayout>
+</LinearLayout>

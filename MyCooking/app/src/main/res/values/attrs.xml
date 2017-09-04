@@ -4,4 +4,32 @@
         <attr name="bottomDragVisibleHeight" format="dimension" />
         <attr name="bototmExtraIndicatorHeight" format="dimension" />
     </declare-styleable>
+
+    <!-- FLOWER DRAWER-->
+    <attr name="elasticDrawerStyle" format="reference" />
+
+    <declare-styleable name="ElasticDrawer">
+
+        <attr name="edMenuBackground" format="color" />
+
+        <attr name="edMenuSize" format="dimension" />
+
+        <attr name="edTouchBezelSize" format="dimension" />
+
+        <attr name="edMaxAnimationDuration" format="integer" />
+
+        <attr name="edPosition" format="integer"/>
+    </declare-styleable>
+    <!-- FLOWER DRAWER-->
+
+
+    <!--DiscreteScrollView-->
+    <declare-styleable name="DiscreteScrollView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--DiscreteScrollView-->
+
 </resources>

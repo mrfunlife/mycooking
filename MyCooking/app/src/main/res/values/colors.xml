@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#f52863</color>
 
 
 
@@ -23,5 +23,19 @@
     <color name="color_gray_weight">#444444</color>
     <color name="colorGreen">#00610b</color>
     <color name="colorBGWellcome">#ff7f00</color>
+    <color name="colorPinkMain">#e41656</color>
+
+    <!--Color By Design-->
+    <color name="whiteplus">#DAE8F4</color>
+    <color name="whitelight">#FEFEFE</color>
+    <color name="cyanlight">#4187e9</color>
+    <color name="bluelight">#9BCDF0</color>
+    <color name="greenight">#A0BC6F</color>
+    <color name="maincolor">#e74c3c</color>
+    <color name="maincolorlight">#ec6e6e</color>
+    <color name="colormenulight">#ff7567</color>
+    <color name="colorbgmenu">#DFE3E3</color>
+
+
 
 </resources>

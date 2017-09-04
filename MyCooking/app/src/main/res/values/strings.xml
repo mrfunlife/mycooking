@@ -4,7 +4,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <!--TEST-->
+    <string name="user_profile_photo">http://baobaoloveyou.com/flowingdrawer_icon.png</string>
+    <!--TEST-->
     <!--For All-->
     <string name="please_wait">Đang lấy dữ liệu</string>
     <string name="loading">Loading</string>
@@ -16,6 +18,7 @@
     <string name="category">Category</string>
     <!--For All-->
     <!--Demo-->
+    <string name="title_menu">Thực đơn 1</string>
     <string name="fake_data_menu">" "- Bắp bò nhúng "\n" - "Rau sống" "\n" - Canh cải xanh "\n" - Giá xào bông hẹ</string>
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
@@ -41,4 +44,8 @@
     <string name="remove">remove</string>
     <string name="use_menu">Hôm nay bạn sẽ sử dụng thực đơn này?.</string>
     <string name="remove_menu">Bạn sẽ chuyển sang dùng một thực đơn khác.?</string>
+
+    <!--DiscreteScrollView-->
+    <string name="dsv_ex_msg_dont_set_lm">You should not set LayoutManager on DiscreteScrollView.class instance. Library uses a special one. Just don\'t call the method.</string>
+    <!--DiscreteScrollView-->
 </resources>

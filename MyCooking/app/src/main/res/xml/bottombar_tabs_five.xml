@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_recents"
+        icon="@drawable/ic_recents"
+        title="Lịch sử" />
+
+    <tab
+        id="@+id/tab_food"
+        icon="@drawable/ic_restaurants"
+        title="Thực đơn" />
+    <tab
+        id="@+id/tab_favorites"
+        icon="@drawable/ic_favorites"
+        title="Tiện ích" />
+</tabs>

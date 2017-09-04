@@ -10,7 +10,7 @@
     <TextView
         style="@style/TextViewWhiteBold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_superbig"
+        android:layout_marginTop="70dp"
         android:text="Chào mừng bạn đến với MyCooking"
         android:textSize="16sp" />
 
@@ -18,8 +18,7 @@
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:id="@+id/loginViewPager"
-        android:layout_marginTop="@dimen/margin_superbig">
+        android:id="@+id/loginViewPager">
     </android.support.v4.view.ViewPager>
     <LinearLayout
         android:id="@+id/loginLayoutDots"
@@ -36,7 +35,21 @@
         android:layout_height="80dp"
         android:background="@drawable/boder_llayout_stroke_white"
         android:layout_margin="@dimen/margin_big"
+        android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="end">
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="40dp">
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/loginBtnFacebook"
+                android:textColor="@color/colorMainWhite"
+                android:text="ĐĂNG NHẬP BẰNG FACEBOOK"
+                style="@style/Widget.AppCompat.Light.ActionButton"
+                android:layout_height="match_parent" />
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

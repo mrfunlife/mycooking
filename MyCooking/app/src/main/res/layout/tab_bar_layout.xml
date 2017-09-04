@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mycooking.funlife.com.vn.mycooking.customview.flowerdrawer.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edMenuBackground="@color/maincolorlight"
+    app:edPosition="1"
+    app:edMenuSize="260dp">
+
+    <include layout="@layout/content_home" />
+
+    <mycooking.funlife.com.vn.mycooking.customview.flowerdrawer.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/vNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/maincolorlight"
+                app:headerLayout="@layout/view_global_menu_header"
+                app:itemIconTint="@color/whitelight"
+                app:itemTextColor="@color/whitelight"
+                app:menu="@menu/drawer_menu" />
+
+
+    </mycooking.funlife.com.vn.mycooking.customview.flowerdrawer.FlowingMenuLayout>
+
+</mycooking.funlife.com.vn.mycooking.customview.flowerdrawer.FlowingDrawer>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:paddingRight="@dimen/margin_medium"
+    android:paddingLeft="@dimen/margin_medium"
+    android:gravity="center_horizontal"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/icon2"
+        android:id="@+id/customTabsIcon"
+        android:layout_height="25dp" />
+    <TextView
+        style="@style/TextViewWhiteBold"
+        android:textSize="12sp"
+        android:id="@+id/customTabsText"
+        android:layout_marginTop="3dp"
+        android:text="Thực đơn"/>
+</LinearLayout>

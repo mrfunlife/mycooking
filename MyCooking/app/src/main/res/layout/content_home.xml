@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <mycooking.funlife.com.vn.mycooking.customview.LockedViewpager
+        android:layout_above="@+id/view"
+        android:layout_width="match_parent"
+        android:id="@+id/homeViewPager"
+        android:layout_height="match_parent">
+    </mycooking.funlife.com.vn.mycooking.customview.LockedViewpager>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/bottomBar"
+        android:background="@color/maincolor"/>
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whitelight"
+        app:bb_tabXmlResource="@xml/bottombar_tabs_five"
+        app:bb_behavior="shifting"
+        app:bb_showShadow="false"
+        app:bb_inActiveTabColor="@color/maincolor"
+        app:bb_activeTabColor="@color/maincolor"
+        app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+        app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
+</RelativeLayout>
