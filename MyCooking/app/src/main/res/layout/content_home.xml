@@ -26,6 +26,6 @@
         app:bb_showShadow="false"
         app:bb_inActiveTabColor="@color/maincolor"
         app:bb_activeTabColor="@color/maincolor"
-        app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+        app:bb_titleTypeFace="fonts/brushsbi.ttf"
         app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
 </RelativeLayout>

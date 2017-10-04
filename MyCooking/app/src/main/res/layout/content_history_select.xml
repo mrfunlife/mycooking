@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activitys.HomeActivity"
+    tools:showIn="@layout/fragment_history_select">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_avg"
+            android:paddingRight="@dimen/padding_avg">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_avg" />
+
+
+            <View style="@style/Divider" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:fadeScrollbars="true"
+                android:id="@+id/historyRecylerView"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -3,9 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mycooking_bg"
+    android:background="@drawable/bg_login"
     android:gravity="center_horizontal"
     android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_black"
+        android:alpha="0.4"
+        android:layout_height="match_parent"/>
 
     <TextView
         style="@style/TextViewWhiteBold"

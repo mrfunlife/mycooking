@@ -8,9 +8,13 @@
     tools:context="mycooking.funlife.com.vn.mycooking.ui.fragments.HomeFragment">
     <include layout="@layout/bar_custom_tranparent"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <mycooking.funlife.com.vn.mycooking.customview.DiscreteScrollView.DiscreteScrollView
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/margin_big"
         android:id="@+id/homeRecyclerView"
         android:layout_height="wrap_content">
     </mycooking.funlife.com.vn.mycooking.customview.DiscreteScrollView.DiscreteScrollView>
@@ -57,5 +61,6 @@
             android:src="@drawable/ic_star_border_black_24dp"
         />
 
+      </LinearLayout>
     </LinearLayout>
 </LinearLayout>

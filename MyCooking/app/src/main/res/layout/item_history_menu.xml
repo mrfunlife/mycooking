@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_login"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/whiteplus"
+                android:alpha="0.2"
+                android:layout_height="match_parent">
+            </View>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextViewBlackBold"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/historyMenuTitle"
+                android:text="Thực đơn: TD - 783"/>
+
+            <TextView
+                style="@style/TextViewBlack"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textSize="@dimen/textsize_small"
+                android:id="@+id/historyMenuDateUse"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/color_gray_weight"
+                android:text="Thứ 3 - 05/09/2017"/>
+            <TextView
+                android:layout_marginTop="@dimen/margin_medium"
+                style="@style/TextViewBlack"
+                android:textSize="@dimen/textsize_small"
+                android:id="@+id/historyMenuFood"
+                android:text="@string/fake_data_menu" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_height="14dp"
+                    android:background="@drawable/ic_like"/>
+                <TextView
+                    style="@style/TextViewBlack"
+                    android:textSize="10sp"
+                    android:paddingTop="2dp"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textColor="@color/maincolor"
+                    android:text="200"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_height="14dp"
+                    android:background="@drawable/ic_comment"/>
+                <TextView
+                    style="@style/TextViewBlack"
+                    android:textSize="10sp"
+                    android:paddingTop="1dp"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textColor="@color/maincolor"
+                    android:text="200"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_height="14dp"
+                    android:background="@drawable/ic_sharez"/>
+                <TextView
+                    style="@style/TextViewBlack"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textColor="@color/maincolor"
+                    android:text="200"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
