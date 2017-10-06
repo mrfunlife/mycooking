@@ -40,7 +40,7 @@ public class HistoryFragment extends BaseFragment {
     private OpenDrawerLayout openDrawerLayout;
     String food = "";
 
-    @BindView(R.id.historyRecylerView)
+    @BindView(R.id.historyMenuRecylerView)
     RecyclerView recyclerView;
 
     private List<HistoryMenu> listHistoryMenu;

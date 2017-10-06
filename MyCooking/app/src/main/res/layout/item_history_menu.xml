@@ -102,9 +102,6 @@
                     android:layout_marginStart="@dimen/margin_small"
                     android:textColor="@color/maincolor"
                     android:text="200"/>
-
-
-
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

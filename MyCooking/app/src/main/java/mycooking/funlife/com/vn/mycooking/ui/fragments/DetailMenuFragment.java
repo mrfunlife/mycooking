@@ -38,10 +38,6 @@ public class DetailMenuFragment extends BaseFragment {
     Toolbar toolbar;
     @BindView(R.id.fab_archive)
     FloatingActionButton fabArchive;
-    @BindView(R.id.text_view_feed_category)
-    TextView txtFeedCategory;
-    @BindView(R.id.text_view_feed_pub_date)
-    TextView txtFeedPubDate;
     @BindView(R.id.image_view_article)
     ImageView imgArticle;
 
@@ -68,7 +64,7 @@ public class DetailMenuFragment extends BaseFragment {
                             .onPositive(new MaterialDialog.SingleButtonCallback() {
                                 @Override
                                 public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
-                                    fabArchive.setImageResource(android.R.drawable.btn_star);
+                                    fabArchive.setImageResource(R.drawable.icons_check);
                                     mSaved = false;
                                 }
                             }).build();
@@ -80,7 +76,7 @@ public class DetailMenuFragment extends BaseFragment {
 
 
     private void setToolbar() {
-        toolbar.setTitle("Thực đơn số 5");
+        toolbar.setTitle("HN - 370");
 
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
