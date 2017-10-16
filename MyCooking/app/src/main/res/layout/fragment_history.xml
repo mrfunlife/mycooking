@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:background="@color/whitelight"
@@ -32,6 +32,15 @@
                 app:civ_border_color="@color/whitelight"
                 app:civ_border_width="1dp"
                 android:layout_height="90dp" />
+
+            <mycooking.funlife.com.vn.mycooking.customview.slideunlockview.ios.IosSlider
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:id="@+id/fragmentHistoryIosSlider"
+                android:layout_alignParentBottom="true"
+                android:layout_height="50dp">
+            </mycooking.funlife.com.vn.mycooking.customview.slideunlockview.ios.IosSlider>
         </RelativeLayout>
 
         <RelativeLayout
@@ -48,4 +57,4 @@
 
         </RelativeLayout>
     </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</ScrollView>

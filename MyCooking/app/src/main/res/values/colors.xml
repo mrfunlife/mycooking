@@ -20,6 +20,7 @@
     <color name="colorFacebook">#345698</color>
     <color name="color_thumb">#E5492A</color>
     <color name="color_black">#222222</color>
+    <color name="color_black_alpha">#12822222</color>
     <color name="color_gray_weight">#444444</color>
     <color name="colorGreen">#00610b</color>
     <color name="colorBGWellcome">#ff7f00</color>

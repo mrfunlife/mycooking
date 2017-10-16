@@ -16,6 +16,7 @@ import java.util.List;
 import butterknife.BindView;
 import mycooking.funlife.com.vn.mycooking.R;
 import mycooking.funlife.com.vn.mycooking.adapter.HistoryMenuAdapter;
+import mycooking.funlife.com.vn.mycooking.customview.slideunlockview.ios.IosSlider;
 import mycooking.funlife.com.vn.mycooking.interfaces.OpenDrawerLayout;
 import mycooking.funlife.com.vn.mycooking.model.HistoryMenu;
 import mycooking.funlife.com.vn.mycooking.ui.BaseFragment;
@@ -37,6 +38,9 @@ public class HistoryFragment extends BaseFragment {
     @BindView(R.id.bar_title)
     TextView txtTitle;
 
+    @BindView(R.id.fragmentHistoryIosSlider)
+    IosSlider iosSlider;
+
     private OpenDrawerLayout openDrawerLayout;
     String food = "";
 
@@ -50,6 +54,11 @@ public class HistoryFragment extends BaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         addcontrols();
+        iosSlider();
+    }
+
+    private void iosSlider() {
+
     }
 
     private void addcontrols() {
