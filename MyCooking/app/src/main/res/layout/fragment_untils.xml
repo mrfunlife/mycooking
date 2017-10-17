@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/whitelight"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <include layout="@layout/bar_custom_tranparent" />
-    <ImageView
+    android:layout_height="match_parent"
+    android:background="@color/whitelight">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:background="@drawable/util_bg"
-        android:layout_height="180dp" />
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/whitelight"
+        android:orientation="vertical">
+        <include layout="@layout/bar_custom_tranparent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/util_bg" />
 
-    <android.support.v7.widget.RecyclerView
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/utilsRecylerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:scrollbars="vertical"
-        android:id="@+id/utilsRecylerView"
+        android:orientation="horizontal"
+        android:id="@+id/utilGuideDonate"
+        android:gravity="center_vertical|end"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
         android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
-
-</LinearLayout>
+        <mycooking.funlife.com.vn.mycooking.customview.slideunlockview.ios.IosSlider
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:id="@+id/utilGuideDonateIosSlider"
+            android:layout_height="50dp">
+        </mycooking.funlife.com.vn.mycooking.customview.slideunlockview.ios.IosSlider>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_height="15dp"
+            android:background="@drawable/ic_next_orange"/>
+    </LinearLayout>
+</RelativeLayout>

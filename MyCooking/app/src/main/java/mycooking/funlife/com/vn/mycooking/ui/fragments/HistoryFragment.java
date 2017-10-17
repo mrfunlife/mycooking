@@ -37,6 +37,9 @@ public class HistoryFragment extends BaseFragment {
     Button btnRight;
     @BindView(R.id.bar_title)
     TextView txtTitle;
+    @BindView(R.id.fragmentHistoryTitle)
+    TextView txtHistoryTitle;
+
 
     @BindView(R.id.fragmentHistoryIosSlider)
     IosSlider iosSlider;
@@ -58,9 +61,13 @@ public class HistoryFragment extends BaseFragment {
     }
 
     private void iosSlider() {
-
+        iosSlider.setTextIosSlider(getString(R.string.ios_text));
+        iosSlider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
     }
-
     private void addcontrols() {
         initBar();
         demoData();

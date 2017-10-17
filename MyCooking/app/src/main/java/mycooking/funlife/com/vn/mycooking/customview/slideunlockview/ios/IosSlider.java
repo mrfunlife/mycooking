@@ -24,6 +24,9 @@ public class IosSlider extends FrameLayout {
 
     private String mTextToBeDrawn;
 
+    private int colorBg = Color.GRAY;
+    private int colorShow = Color.WHITE;
+
     LinearGradient[] mShaders;
     int mIndex = 0;
 
@@ -44,15 +47,18 @@ public class IosSlider extends FrameLayout {
         init();
     }
 
+    public void setTextIosSlider(String txt){
+        this.mTextToBeDrawn = txt;
+    }
     private void init() {
         setBackgroundResource(R.drawable.ios_back);
-        mTextToBeDrawn = getContext().getString(R.string.ios_text);
+//        mTextToBeDrawn = getContext().getString(R.string.ios_text);
 
         mTextPaint = new Paint();
         mTextPaint.setAntiAlias(true);
-        mTextPaint.setTextSize(getResources().getDimensionPixelSize(R.dimen.textsize_big));
+        mTextPaint.setTextSize(getResources().getDimensionPixelSize(R.dimen.textsize_medium));
 
-        mPaddingRight = getResources().getDimensionPixelSize(R.dimen.ios_padding_right);
+        mPaddingRight = getResources().getDimensionPixelSize(R.dimen.margin_zezo);
 
 
         getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -63,6 +69,12 @@ public class IosSlider extends FrameLayout {
             }
         });
 
+    }
+
+
+    public void setColor(int colorBg, int colorShow){
+        this.colorBg = colorBg;
+        this.colorShow = colorShow;
     }
 
     @Override
@@ -92,13 +104,13 @@ public class IosSlider extends FrameLayout {
         canvas.drawText(mTextToBeDrawn, startX, startY, mTextPaint);
     }
 
-    private void initShaders() {
+    public void initShaders() {
         final int COUNT = 100;
         mShaders = new LinearGradient[COUNT];
         float stepX = getWidth() * 3 / COUNT;
-        int[] colors = new int[] { Color.GRAY, Color.WHITE, Color.GRAY};
+        int[] colors = new int[] { colorBg, colorShow, colorBg};
         for (int i = 0; i < COUNT; i++) {
-            mShaders[i] = new LinearGradient(stepX * i, 0, stepX * (i + 6), 0, colors, null, Shader.TileMode.CLAMP);
+            mShaders[i] = new LinearGradient(stepX * i, 0, stepX * (i + 6), 0, colors, null, Shader.TileMode.REPEAT);
         }
     }
 

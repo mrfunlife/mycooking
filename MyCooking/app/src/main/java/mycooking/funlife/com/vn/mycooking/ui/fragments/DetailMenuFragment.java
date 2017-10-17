@@ -64,7 +64,7 @@ public class DetailMenuFragment extends BaseFragment {
                             .onPositive(new MaterialDialog.SingleButtonCallback() {
                                 @Override
                                 public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
-                                    fabArchive.setImageResource(R.drawable.icons_check);
+                                    fabArchive.setImageResource(R.drawable.ic_check_white);
                                     mSaved = false;
                                 }
                             }).build();

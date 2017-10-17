@@ -10,10 +10,15 @@ import lombok.Setter;
 @Getter
 public class Utils {
     private String name;
-    private String img;
+    private int img;
 
 
     public Utils(String name) {
         this.name = name;
+    }
+
+    public Utils(String name, int img) {
+        this.name = name;
+        this.img = img;
     }
 }

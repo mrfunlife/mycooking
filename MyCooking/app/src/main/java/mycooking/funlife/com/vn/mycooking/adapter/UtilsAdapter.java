@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -43,7 +44,7 @@ public class UtilsAdapter extends RecyclerView.Adapter<UtilsAdapter.MyViewHolder
     public void onBindViewHolder(UtilsAdapter.MyViewHolder holder, int position) {
         Utils utils = listUtils.get(position);
         holder.txtName.setText(utils.getName());
-
+        holder.iconItem.setImageResource(utils.getImg());
     }
 
     @Override
@@ -54,6 +55,8 @@ public class UtilsAdapter extends RecyclerView.Adapter<UtilsAdapter.MyViewHolder
     public class MyViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.item_utils_name)
         TextView txtName;
+        @BindView(R.id.item_utils_img)
+        ImageView iconItem;
         public MyViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);

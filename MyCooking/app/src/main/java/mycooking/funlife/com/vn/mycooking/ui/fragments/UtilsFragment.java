@@ -1,5 +1,6 @@
 package mycooking.funlife.com.vn.mycooking.ui.fragments;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -17,6 +18,7 @@ import butterknife.BindView;
 import mycooking.funlife.com.vn.mycooking.R;
 import mycooking.funlife.com.vn.mycooking.adapter.HistoryMenuAdapter;
 import mycooking.funlife.com.vn.mycooking.adapter.UtilsAdapter;
+import mycooking.funlife.com.vn.mycooking.customview.slideunlockview.ios.IosSlider;
 import mycooking.funlife.com.vn.mycooking.interfaces.OpenDrawerLayout;
 import mycooking.funlife.com.vn.mycooking.model.HistoryMenu;
 import mycooking.funlife.com.vn.mycooking.model.Utils;
@@ -37,6 +39,8 @@ public class UtilsFragment extends BaseFragment {
     Button btnRight;
     @BindView(R.id.bar_title)
     TextView txtTitle;
+    @BindView(R.id.utilGuideDonateIosSlider)
+    IosSlider iosSlider;
 
     private OpenDrawerLayout openDrawerLayout;
 
@@ -47,9 +51,14 @@ public class UtilsFragment extends BaseFragment {
     private List<Utils> listUtils;
     private UtilsAdapter adapter;
 
+    int colorBg = Color.rgb(231,76,60);
+    int colorShow = Color.WHITE;
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        iosSlider.setTextIosSlider("Ủng hộ lập trình viên");
+        iosSlider.setColor(colorBg,colorShow);
         addControls();
         demoData();
     }
@@ -66,8 +75,11 @@ public class UtilsFragment extends BaseFragment {
 
     private void fake() {
         Utils utils1 = new Utils("Giá thực phẩm mỗi ngày");
+        utils1.setImg(R.drawable.ic_price);
         Utils utils2 = new Utils("Dinh dưỡng cho bé");
+        utils2.setImg(R.drawable.ic_nutri);
         Utils utils3 = new Utils("Mẹo vặt gia đình");
+        utils3.setImg(R.drawable.ic_idea);
         Utils utils4 = new Utils("Khác");
         listUtils.add(utils1);
         listUtils.add(utils2);
